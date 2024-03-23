@@ -1,3 +1,4 @@
-{"titolo":"dsa","autore":"dsa","genere":"dsa","editore":"dsa","annoPubblicazione":1998,"isbn":"","descrizione":"si","disponibilita":si},
-{"titolo":"dsa","autore":"dsa","genere":"dsa","editore":"s","annoPubblicazione":2000,"isbn":"","descrizione":"ds","disponibilita":si},
-{"titolo":"s","autore":"s","genere":"s","editore":"s","annoPubblicazione":2000,"isbn":"","descrizione":"s","disponibilita":si}
+[{"titolo":"a","autore":"a","genere":"a","editore":"a","annoPubblicazione":2001,"isbn":"","descrizione":"no","disponibilita":no},
+{"titolo":"ds","autore":"ds","genere":"ds","editore":"s","annoPubblicazione":2001,"isbn":"","descrizione":"s","disponibilita":s},
+{"titolo":"s","autore":"s","genere":"s","editore":"s","annoPubblicazione":1002,"isbn":"","descrizione":"si","disponibilita":si},
+{"titolo":"s","autore":"s","genere":"s","editore":"s","annoPubblicazione":2001,"isbn":"","descrizione":"si","disponibilita":"si"}]
