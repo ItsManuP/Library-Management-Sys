@@ -44,7 +44,7 @@ public class AggiungiLibro {
         "\"annoPubblicazione\":" + libro.getAnnoPubblicazione() + "," +
         "\"isbn\":\"" + libro.getIsbn() + "\"," +
         "\"descrizione\":\"" + libro.getDescrizione() + "\"," +
-        "\"disponibilita\":" + libro.isDisponibilità() +
+        "\"disponibilita\":" + "\""+ libro.getDisponibilità() + "\""+
     "}";
     
     
@@ -64,8 +64,15 @@ public class AggiungiLibro {
      }
  
      // Concateno i json
-     String concatenatedJson = oldContent.isEmpty() ? json : oldContent.substring(0, oldContent.length() - 1) + "}"+ "," + "\n" + json ;
- 
+     String concatenatedJson;
+     if (oldContent.isEmpty()) {
+      concatenatedJson = "[" + json + "]";
+  } else {
+      concatenatedJson = oldContent.substring(0, oldContent.length() - 1) + "," + "\n" + json + "]";
+  }
+
+
+
      // Scrivi contenuto concatenato sul file
      try (FileWriter fileWriter = new FileWriter("SistemaBibliotecario/src/dati/libri.json")) {
        fileWriter.write(concatenatedJson);
