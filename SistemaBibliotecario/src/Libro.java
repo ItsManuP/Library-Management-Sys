@@ -1,8 +1,4 @@
 
-
-
-
-
 public class Libro {
 
     private String titolo;
@@ -81,7 +77,7 @@ public class Libro {
         this.descrizione = descrizione;
     }
 
-    public String isDisponibilità() {
+    public String getDisponibilità() {
         return disponibilità;
     }
     
